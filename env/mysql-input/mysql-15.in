@@ -1,0 +1,47 @@
+# environment variables for mysql
+
+###########################
+###  config  variables  ###
+###########################
+c1: --external-locking, --skip-external-locking
+c2: --character-set-client-handshake, --skip-character-set-client-handshake
+c3: --external-locking,
+c4: --big-tables,
+c5: --flush,
+c6: --memlock,
+c7: --skip-networking,
+c8: --super-large-pages,
+c9: --symbolic-links
+
+--default-storage-engine: InnoDB, BLACKHOLE, MyISAM
+--binlog-format: ROW, STATEMENT, MIXED
+--daemonize: OFF, ON
+--delay-key-write: ON, OFF, ALL
+--event-scheduler: ON, OFF, DISABLED
+--myisam-recover-options: OFF, DEFAULT, BACKUP, FORCE, QUICK
+--autocommit: 0, 1
+
+--key-buffer-size: 8, 76695844, 153391689, 230087533, 306783378, 383479222, 460175067, 536870911, 613566756, 690262600, 766958445, 843654289, 920350134, 997045978, 1073741823
+--max-allowed-packet: 1024, 76695844, 153391689, 230087533, 306783378, 383479222, 460175067, 536870911, 613566756, 690262600, 766958445, 843654289, 920350134, 997045978, 1073741824
+--max-connections: 1, 7142, 14285, 21427, 28571, 35712, 42857, 49997, 57142, 64282, 71428, 78567, 85714, 92852, 100000
+--wait-timeout: 1, 2057, 4114, 6171, 8228, 10285, 12342, 14399, 16457, 18513, 20571, 22627, 24685, 26741, 28800
+--interactive-timeout: 1, 2057, 4114, 6171, 8228, 10285, 12342, 14399, 16457, 18513, 20571, 22627, 24685, 26741, 28800
+
+
+###########################
+### workload  variables ###
+###########################
+--concurrency: 1, 2, 3, 4, 6, 8, 9, 10, 12, 13, 15, 17, 18, 19, 20
+--iterations: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+--number-int-cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+--number-char-cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+--commit: 0, 3, 6, 9, 13, 16, 19, 23, 26, 29, 34, 38, 43, 46, 50
+c10: --compress,
+c11: --enable-cleartext-plugin,
+--detach: 0, 1, 2, 3, 4, 5
+
+
+###########################
+###     constrains      ###
+###########################
+[--max-connections] >= [--concurrency];

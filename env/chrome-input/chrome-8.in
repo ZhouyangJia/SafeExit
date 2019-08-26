@@ -1,0 +1,54 @@
+# environment variables for chrome
+
+###########################
+###       variables     ###
+###########################
+#chromium-browser --accept-resource-provider --account-consistency --agc-startup-min-volume=12 --allow-cross-origin-auth-prompt --allow-hidden-media-playback --alsa-enable-upsampling=32kHz --alternative --app --arc-availability=installed --ash-animate-from-boot-splash-screen --ash-enable-magnifier-key-scroller --ash-enable-night-light --audio-output-channels=4 --auto --bwsi --ChromeOSMemoryPressureHandling --cloud-print-setup-proxy --data-reduction-proxy-lo-fi=always-on --disable-2d-canvas-clip-aa --disable-backing-store-limit --disable-direct-composition-layers --disable-hang-monitor --disable-local-storage --disable-per-user-timezone --disable-permission-action-reporting --disable-suggestions-ui --disable-sync --enable-accelerated-2d-canvas --enable-cast-receiver --fast-start --force-enable-stylus-tools --force-first-run --incognito --is-running-in-mash --log-net-log
+
+--agc-startup-min-volume: 12, 38, 62, 86, 110, 134, 158, 182, 206, 230, 255
+c1: --accept-resource-provider,
+c2: --account-consistency,
+c4: --allow-cross-origin-auth-prompt,
+c5: --allow-hidden-media-playback,
+--alsa-enable-upsampling: 32kHz, 34kHz, 36kHz, 38kHz, 41kHz, 44kHz, 46kHz, 48kHz
+c7: --alternative,
+c8: --app,
+c9: --arc-availability=installed,
+c10: --ash-animate-from-boot-splash-screen,
+c11: --ash-enable-magnifier-key-scroller,
+c12: --ash-enable-night-light,
+--audio-output-channels: 1, 2, 4, 5, 6, 7, 8, 10
+c14: --auto,
+c15: --bwsi,
+c16: --ChromeOSMemoryPressureHandling,
+c17: --cloud-print-setup-proxy,
+c19: --disable-2d-canvas-clip-aa,
+c20: --disable-backing-store-limit,
+c21: --disable-direct-composition-layers,
+c22: --disable-hang-monitor,
+c23: --disable-local-storage,
+c24: --disable-per-user-timezone,
+c25: --disable-permission-action-reporting,
+c26: --disable-suggestions-ui,
+c27: --disable-sync,
+c28: --enable-accelerated-2d-canvas,
+c29: --enable-cast-receiver,
+c30: --fast-start,
+c31: --force-enable-stylus-tools,
+c32: --force-first-run,
+c33: --incognito,
+c34: --is-running-in-mash,
+c35: --log-net-log,
+--data-reduction-proxy-lo-fi: always-on, cellular-only, disabled
+
+
+###########################
+###      constrains     ###
+###########################
+# -c <= -n
+#[-n] >= [-c];
+# -n = 50k if -t != no
+#if [-t] in {"1", "10", "30"} then [-n] = 50000;
+# -m != HEAD if -k = yes
+#if [-k] = "yes" then [-m] in {"get", "put", "post"};
+

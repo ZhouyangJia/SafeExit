@@ -1,0 +1,8 @@
+This fold includes the samples used to train and test SafeExit, as well as the 
+variables of input scenario for each program.
+
+In the file of input-scenario variable, there probably are four sections:
+workload variable, config variable, workload constrain and config constrain.
+
+In each sample file (both testing and training), the first line contains the 
+input-scenario variables, while each other line is a sample of these variables. 

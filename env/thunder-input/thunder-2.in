@@ -1,0 +1,45 @@
+# environment variables for thunder
+
+###########################
+###  config  variables  ###
+###########################
+accessibility.AOM.enabled: true, false
+accessibility.tabfocus_applies_to_xul: true, false
+alerts.showFavicons: true, false
+app.update.cert.checkAttributes: true, false
+apz.allow_checkerboarding: true, false
+apz.disable_for_scroll_linked_effects: true, false
+apz.minimap.visibility.enabled: true, false
+apz.record_checkerboarding: true, false
+autocomplete.ungrab_during_mode_switch: true, false
+bidi.edit.delete_immediately: true, false
+browser.cache.disk.enable: true, false
+browser.cache.disk.smart_size.first_run: true, false
+browser.chrome.site_icons: true, false
+browser.display.force_inline_alttext: true, false
+browser.download.manager.addToRecentDocs: true, false
+browser.download.manager.showAlertOnComplete: true, false
+browser.fixup.dns_first_for_single_words: true, false
+browser.formfill.saveHttpsForms: true, false
+browser.meta_refresh_when_inactive.disabled: true, false
+browser.safebrowsing.downloads.remote.enabled: true, false
+browser.search.log: true, false
+browser.search.update: true, false
+browser.triple_click_selects_paragraph: true, false
+camera.control.face_detection.enabled: true, false
+canvas.imagebitmap_extensions.enabled: true, false
+chat.irc.automaticList: true, false
+clipboard.plainTextOnly: true, false
+datareporting.policy.dataSubmissionPolicyBypassNotification: true, false
+devtools.browserconsole.filter.info: true, false
+devtools.browserconsole.filter.serverinfo: true, false
+devtools.browserconsole.filter.sharedworkers: true, false
+devtools.chrome.enabled: true, false
+devtools.command-button-screenshot.enabled: true, false
+devtools.debugger.enabled: true, false
+devtools.debugger.remote-websocket: true, false
+extensions.getAddons.databaseSchema: 1, 5
+extensions.databaseSchema: 1, 19
+mail.server.server1.authMethod: 1, 10
+mail.smtpserver.smtp1.authMethod: 1, 10
+mail.server.server1.socketType: 1, 3

@@ -1,0 +1,42 @@
+# environment variables for chrome
+
+###########################
+###       variables     ###
+###########################
+--agc-startup-min-volume: 12, 255
+c1: --accept-resource-provider,
+c2: --account-consistency,
+c4: --allow-cross-origin-auth-prompt,
+c5: --allow-hidden-media-playback,
+--alsa-enable-upsampling: 32kHz, 48kHz
+c7: --alternative,
+c8: --app,
+c9: --arc-availability=installed,
+c10: --ash-animate-from-boot-splash-screen,
+c11: --ash-enable-magnifier-key-scroller,
+c12: --ash-enable-night-light,
+--audio-output-channels: 1, 10
+c14: --auto,
+c15: --bwsi,
+c16: --ChromeOSMemoryPressureHandling,
+c17: --cloud-print-setup-proxy,
+c19: --disable-2d-canvas-clip-aa,
+c20: --disable-backing-store-limit,
+c21: --disable-direct-composition-layers,
+c22: --disable-hang-monitor,
+c23: --disable-local-storage,
+c24: --disable-per-user-timezone,
+c25: --disable-permission-action-reporting,
+c26: --disable-suggestions-ui,
+c27: --disable-sync,
+c28: --enable-accelerated-2d-canvas,
+c29: --enable-cast-receiver,
+c30: --fast-start,
+c31: --force-enable-stylus-tools,
+c32: --force-first-run,
+c33: --incognito,
+c34: --is-running-in-mash,
+c35: --log-net-log,
+--data-reduction-proxy-lo-fi: always-on, cellular-only, disabled
+
+

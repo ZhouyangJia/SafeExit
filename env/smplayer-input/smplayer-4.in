@@ -1,0 +1,45 @@
+# environment variables for smplayer
+
+###########################
+###  config  variables  ###
+###########################
+add_blackborders_on_fullscreen=false: true, false
+autoload_m4a=true: true, false
+autosync=false: true, false
+disable_screensaver=true: true, false
+dont_remember_media_settings=false: true, false
+dont_remember_time_pos=false: true, false
+global_audio_equalizer=true: true, false
+global_volume=true: true, false
+remember_media_settings=true: true, false
+remember_stream_settings=true: true, false
+remember_time_pos=true: true, false
+tablet_mode=false: true, false
+use_audio_equalizer=false: true, false
+use_direct_rendering=false: true, false
+use_double_buffer=true: true, false
+use_hwac3=false: true, false
+use_mc=false: true, false
+use_soft_video_eq=false: true, false
+use_soft_vol=true: true, false
+vdpau_disable_video_filters=true: true, false
+vdpau_ffh264vdpau=true: true, false
+vdpau_ffhevcvdpau=false: true, false
+vdpau_ffmpeg12vdpau=true: true, false
+repaint_video_background=false: true, false
+save_smplayer_log=false: true, false
+show_tag_in_window_title=true: true, false
+fullscreen_playlist_was_visible=false: true, false
+ignore_playlist_events=false: true, false
+mainwindow_visible=true: true, false
+format_info=false: true, false
+frame_counter=false: true, false
+fullscreen_toolbar1_was_visible=false: true, false
+play_files_from_start=true: true, false
+recursive_add_directory=false: true, false
+recents\max_items=10: 1, 4, 7, 10
+urls\max_items=50: 1, 16, 32, 50
+initial_sub_pos=100: 1, 33, 66, 100
+initial_sub_scale=5: 1, 2, 4, 5
+
+

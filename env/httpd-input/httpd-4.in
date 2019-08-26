@@ -1,0 +1,40 @@
+# environment variables for apache
+
+###########################
+### workload  variables ###
+###########################
+# keep-alive
+-k: yes, no
+# windowsize
+-b: 4096, 2099882, 4195669, 6291456
+# request
+-n: 1, 16666, 33333, 50000
+# concurrency
+-c: 1, 66, 133, 200
+# timelimit
+-t: no, 1, 15, 30
+# HTTP-method
+-m: get, head, put, post
+
+###########################
+###  config  variables  ###
+###########################
+KeepAlive: on, off
+KeepAliveTimeout: 5, 50, 100, 150
+MaxKeepAliveRequests: 100, 333333, 666666, 999999
+StartServers: 2, 6, 11, 16
+Timeout: 60, 140, 220, 300
+
+###########################
+### workload constrains ###
+###########################
+# -c <= -n
+[-n] >= [-c];
+# -n = 50k if -t != no
+if [-t] in {"1", "10", "30"} then [-n] = 50000;
+# -m != HEAD if -k = yes
+if [-k] = "yes" then [-m] in {"get", "put", "post"};
+
+###########################
+###  config constrains  ###
+###########################

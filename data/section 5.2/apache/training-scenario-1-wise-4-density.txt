@@ -1,0 +1,7 @@
+-k	-b	-n	-c	-t	-m	KeepAlive	KeepAliveTimeout	MaxKeepAliveRequests	StartServers	Timeout
+yes	6291456	50000	200	15	get	on	100	666666	2	220
+no	4096	50000	1	30	head	off	50	100	11	60
+no	4195669	16666	133	no	post	on	5	999999	16	140
+yes	2099882	1	1	no	put	on	150	333333	6	300
+no	4096	33333	66	no	put	on	100	100	2	220
+no	2099882	50000	200	1	post	on	150	333333	6	60
