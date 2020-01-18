@@ -1,7 +1,7 @@
 SafeExit
 ---
 
-###Automatically Detecting Missing Cleanup for Ungraceful Exits
+### Automatically Detecting Missing Cleanup for Ungraceful Exits
 
 
 Software encounters ungraceful exits due to either bugs in the interrupt/signal handler code or the intention of developers to debug the software. Users may su er from "weird" problems caused by leftovers of the ungraceful exits. A common practice to fix these problems is rebooting, which wipes away the stale state of the software. This solution, however, is heavyweight and often leads to poor user experience because it requires restarting other normal processes. 
@@ -9,7 +9,7 @@ Software encounters ungraceful exits due to either bugs in the interrupt/signal 
 SafeExit is a tool that can automatically detect and pinpoint the root causes of the problems caused by ungraceful exits, which can help users fix the problems using lightweight solutions. Specifically, SafeExit checks the program exit behaviors in the case of an interrupted execution against its expected exit behaviors to detect the missing cleanup behaviors required for avoiding the ungraceful exit. The expected behaviors are obtained by monitoring the program exit under a normal execution. 
 
 
-###Usage
+### Usage
 Clone SafeExit source code, and change the directory to SafeExit:
 
 ```
@@ -90,4 +90,4 @@ Please note:
 
 Zhouyang Jia, Shanshan Li, Tingting Yu, Xiangke Liao, and Ji Wang. 2019. Automatically detecting missing cleanup for ungraceful exits. In Proceedings of the 2019 27th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE 2019). ACM, New York, NY, USA, 751-762. DOI: https://doi.org/10.1145/3338906.3338938
 
-###Have fun
+### Have fun
